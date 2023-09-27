@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+  <head>
+    <title>Elog</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Elog</a></h1>
+      <a href="{% url 'post_new' %}">New Post</a>
+    </header>
+    <main>
+      <div>
+        <div>{% block content %} {% endblock %}</div>
+      </div>
+    </main>
+  </body>
+</html>
